@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<xacro:macro name="depthai_camera" params="camera_name:=oak camera_model:=OAK-D parent_frame:=oak-d-base-frame base_frame=oak-d_frame
+                                           cam_pos_x:=0.0 cam_pos_y:=0.0 cam_pos_z:=0.0 
+                                           cam_roll:=0.0 cam_pitch:=0.0 cam_yaw:=0.0">
+
+    <xacro:include filename="$(find depthai_descriptions)/urdf/include/depthai_macro.urdf.xacro"/>
+
+    <xacro:depthai_camera camera_name = "${camera_name}" parent = "${parent_frame}" camera_model = "${camera_model}" base_frame = "${base_frame}" cam_pos_x = "${cam_pos_x}" cam_pos_y = "${cam_pos_y}" cam_pos_z = "${cam_pos_z}" cam_roll = "${cam_roll}" cam_pitch = "${cam_pitch}" cam_yaw = "${cam_yaw}"/>
+
+  </xacro:macro>
+</robot>
