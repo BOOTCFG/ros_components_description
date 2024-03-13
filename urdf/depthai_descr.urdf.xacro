@@ -6,7 +6,7 @@
 
     <xacro:include filename="$(find depthai_descriptions)/urdf/include/depthai_macro.urdf.xacro"/>
 
-    <xacro:depthai_camera camera_name = "${camera_name}" parent = "${parent_frame}" camera_model = "${camera_model}" base_frame = "${base_frame}" cam_pos_x = "${cam_pos_x}" cam_pos_y = "${cam_pos_y}" cam_pos_z = "${cam_pos_z}" cam_roll = "${cam_roll}" cam_pitch = "${cam_pitch}" cam_yaw = "${cam_yaw}"/>
+    <xacro:depthai_camera camera_name="${camera_name}" parent = "${parent_frame}" camera_model = "${camera_model}" base_frame = "${base_frame}" cam_pos_x = "${cam_pos_x}" cam_pos_y = "${cam_pos_y}" cam_pos_z = "${cam_pos_z}" cam_roll = "${cam_roll}" cam_pitch = "${cam_pitch}" cam_yaw = "${cam_yaw}"/>
 
   </xacro:macro>
 </robot>
